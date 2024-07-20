@@ -1,0 +1,34 @@
+header {
+    margin: 20px;
+    border-style: double;
+    border-color:var(--darkblue);
+    border-width: 8px;
+    padding: 20px;
+}
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+header button {
+    display: inline;
+    float: right;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+}
+article {
+    margin: 20px;
+    border-style: double;
+    border-color:var(--darkblue);
+    border-width: 8px;
+    padding: 20px;
+    flex-wrap: wrap;
+    min-width: 45%;
+    min-height: 60%;
+    min-height: 640px;
+}
+#article1 {
+}
+#article2 {
+}
