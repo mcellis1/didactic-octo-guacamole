@@ -1,26 +1,7 @@
-header {
-    border-bottom-style: solid;
-    border-color:var(--darkpurple);
-    border-width: 4px;
-    padding: 20px;
-    margin-bottom: 8px;
-}
-header h1 {
-    display: inline-block;
-    font-size: 48px;
-    font-weight: 700;
-}
-header button {
-    display: inline;
-    float: right;
-}
 main {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    border-top-style: solid;
-    border-color:var(--darkpurple);
-    border-width: 4px;    
 }
 article {
     border-color:var(--darkpurple);
