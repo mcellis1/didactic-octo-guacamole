@@ -1,7 +1,7 @@
 :root {
-	--darkblue: rgb(26, 1, 136);
-	--darkbackground: rgb(38, 33, 49);
-	--darkmodefont: rgb(239, 226, 255);
+	--darkpurple: rgb(70, 22, 133);
+	--darkbackground: rgb(23, 21, 27);
+	--darkmodefont: rgb(247, 239, 253);
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

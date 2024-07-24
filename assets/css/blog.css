@@ -1,13 +1,14 @@
 header {
-    margin: 20px;
-    border-style: double;
-    border-color:var(--darkblue);
-    border-width: 8px;
+    border-bottom-style: solid;
+    border-color:var(--darkpurple);
+    border-width: 4px;
     padding: 20px;
+    margin-bottom: 8px;
 }
 header h1 {
     display: inline-block;
     font-size: 48px;
+    font-weight: 700;
 }
 header button {
     display: inline;
@@ -15,20 +16,61 @@ header button {
 }
 main {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    width: 100%;
+    border-top-style: solid;
+    border-color:var(--darkpurple);
+    border-width: 4px;    
 }
 article {
-    margin: 20px;
-    border-style: double;
-    border-color:var(--darkblue);
-    border-width: 8px;
-    padding: 20px;
+    border-color:var(--darkpurple);
     flex-wrap: wrap;
-    min-width: 45%;
-    min-height: 60%;
-    min-height: 640px;
+    min-width: 49%;
+    min-height: 50%;
+    justify-content: space-around;
 }
 #article1 {
+    border-right-style: solid;
+    border-width: 4px;
+    margin-right: 4px;
+    text-align: center;
+}
+#article1 h2 {
+    padding: 30% 8% 30% 8%;
+    background-image: linear-gradient(rgb(0, 255, 255), rgb(0, 0, 0));
+    border-radius: 100%;
+    margin: 10% 14% 10% 14%;
+    font-size: 48px;
 }
 #article2 {
+    border-left-style: solid;
+    border-width: 4px;
+    margin-left: 4px;
+}
+#article2 h3 {
+    text-align: center;
+    margin-top: 20%;
+    font-size: 28px;
+    font-weight: 700;
+}
+#article2 h4 {
+    margin: 10px 0 4px 5%;
+    font-size: 18px;
+}
+#article2 input {
+    margin: 10px 0 4px 5%;
+    min-width: 80%;
+    font-size: 18px;
+    border-radius: 10px;
+}
+main button {
+    margin: 20px 0 4px 5%;
+    min-width: 81%;
+    font-size: 18px;
+    text-align: center;
+    background-color: var(--darkmodefont);
+    color: var(--darkbackground);
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 700;
 }
