@@ -1,25 +1,25 @@
-.article-div {
+article section {
     min-width: 80%;
     border-style: solid;
     border-color: var(--darkpurple);
     border-width: 4px;
     margin: 20px;
 }
-.article-div-h2 {
+article section h2 {
     margin: 10px;
     font-size: 28px;
     border-bottom-style: solid;
-    border-bottom-color: rgba(0, 184, 184, 0.671);
+    border-bottom-color: rgb(0, 184, 184, 0.671);
     border-bottom-width: 2px;
     padding: 6px;
     font-weight: 700;
 }
-.article-div-p {
+article section p {
     padding: 10px;
     margin: 20px;
     font-size: 18px;
 }
-.article-div-footer {
+article section div {
     margin: 10px;
     font-size: 14px;
     font-style: italic;

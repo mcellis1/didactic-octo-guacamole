@@ -1,3 +1,21 @@
+let usernames = [];
+let titles = [];
+let contents = [];
+
+function onBoot() {
+    const localUsernames = JSON.parse(localStorage.getItem('usernames'));
+    const localTitles = JSON.parse(localStorage.getItem('titles'));
+    const localContents = JSON.parse(localStorage.getItem('contents'));
+
+    if (localUsernames !== null &&
+        localTitles !== null &&
+        localContents !== null) {
+        usernames = localUsernames;
+        titles = localTitles;
+        contents = localContents;
+    }
+}
+
 // store local data entered in each field in to the local data on the browser
 // const usernameInput = document.querySelector('#username-field');
 // const titleInput = document.querySelector('#title-field');
