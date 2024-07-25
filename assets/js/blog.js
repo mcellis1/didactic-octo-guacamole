@@ -1,9 +1,6 @@
 const mainArticle = document.querySelector('#main-article');
+const backBtn = document.querySelector('#back-btn');
 
-// const title = document.createElement('h2');
-// title.value = localTitle;
-
-// mainArticle.appendChild(title);
 onBoot();
 
 function renderBlogs() {
@@ -20,12 +17,7 @@ function renderBlogs() {
         h2.textContent = title;
         pTag.textContent = content;
         div.textContent = username;
-        // .appendChild(document.createElement('section'))
-        // .appendChild(document.createElement('div'));
-      
-        // div.textContent = username;
-        // div.setAttribute('data-index', i);
-        // mainArticle.appendChild(fragment);
+
         mainArticle.appendChild(section);
         section.appendChild(h2);
         section.appendChild(pTag);
@@ -33,8 +25,8 @@ function renderBlogs() {
     }
 }
 
-renderBlogs();
+backBtn.addEventListener('click', function () {
+    location.href = 'index.html';
+});
 
-console.log(usernames);
-console.log(titles);
-console.log(contents);
+renderBlogs();

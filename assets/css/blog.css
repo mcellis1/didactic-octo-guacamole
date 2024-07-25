@@ -42,3 +42,12 @@ footer ul li {
     padding: 4px;
     font-size: 18px;
 }
+#back-btn {
+    margin: 4px 12px 12px 0;
+    font-size: 18px;
+    border-style: none;
+    background-color: black;
+    padding: 10px;
+    border-radius: 8px;
+    color: var(--darkmodefont);
+}

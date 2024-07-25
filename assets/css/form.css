@@ -37,6 +37,7 @@ article {
 #article2 h4 {
     margin: 10px 0 4px 5%;
     font-size: 18px;
+    font-weight: 700;
 }
 #article2 input {
     margin: 10px 0 4px 5%;
@@ -44,12 +45,12 @@ article {
     font-size: 18px;
     border-radius: 10px;
 }
-main button {
+#submit-button {
     margin: 20px 0 4px 5%;
     min-width: 81%;
     font-size: 18px;
     text-align: center;
-    background-color: var(--darkmodefont);
+    background-color: rgb(94, 164, 255);
     color: var(--darkbackground);
     border-radius: 10px;
     padding: 10px;
