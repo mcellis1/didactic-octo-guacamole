@@ -1,13 +1,12 @@
 const mainArticle = document.querySelector('#main-article');
 const backBtn = document.querySelector('#back-btn');
 
-onBoot();
-
 function renderBlogs() {
-    for (let i = 0; i < usernames.length; i++) {
-        const title = titles[i];
-        const content = contents[i];
-        const username = usernames[i];
+    const posts = JSON.parse(localStorage.getItem('posts')) || [];
+    for (let i = 0; i < posts.length; i++) {
+        const title = posts[i].title;
+        const content = posts[i].content;
+        const username = posts[i].username;
 
         const section = document.createElement('section')
 

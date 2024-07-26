@@ -1,61 +1,148 @@
 :root {
-	--darkpurple: rgb(70, 22, 133);
-	--darkbackground: rgb(23, 21, 27);
-	--darkmodefont: rgb(219, 207, 228);
+    --darkpurple: rgb(70, 22, 133);
+    --darkbackground: rgb(23, 21, 27);
+    --darkmodefont: rgb(219, 207, 228);
 }
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
-	font-weight: 100;
+    font-weight: 100;
 }
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
     background-color: var(--darkbackground);
     color: var(--darkmodefont);
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
+
 header {
     border-bottom-style: solid;
-    border-color:var(--darkpurple);
+    border-color: var(--darkpurple);
     border-width: 4px;
     padding: 20px;
     margin-bottom: 8px;
 }
+
 header h1 {
     display: inline-block;
     font-size: 48px;
     font-weight: 700;
 }
+
 header button {
     display: inline;
     float: right;
 }
+
 main {
-	border-top-style: solid;
-    border-color:var(--darkpurple);
-    border-width: 4px;    
+    border-top-style: solid;
+    border-color: var(--darkpurple);
+    border-width: 4px;
 }
+
 #light-dark-btn {
     margin: 0 12px 12px 0;
     font-size: 32px;

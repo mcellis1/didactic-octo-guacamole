@@ -2,11 +2,10 @@ const usernameInput = document.querySelector('#username-field');
 const titleInput = document.querySelector('#title-field');
 const contentInput = document.querySelector('#content-field');
 const submitButton = document.querySelector('#submit-button');
+const errorAlert = document.querySelector('#error-alert');
 
-function storeBlog() {
-    localStorage.setItem('usernames', JSON.stringify(usernames));
-    localStorage.setItem('titles', JSON.stringify(titles));
-    localStorage.setItem('contents', JSON.stringify(contents));
+function storeBlog(posts) {
+    localStorage.setItem('posts', JSON.stringify(posts))
 }
 
 function clearFields() {
@@ -15,28 +14,32 @@ function clearFields() {
     contentInput.value = '';
 };
 
-function goToBlog () {
+function goToBlog() {
     location.href = 'blog.html';
 };
 
 submitButton.addEventListener('click', function () {
-    const usernameValue = usernameInput.value.trim();
-    const titleValue = titleInput.value.trim();
-    const contentValue = contentInput.value.trim();
+    errorAlert.textContent = '';
 
-    if (usernameValue === '' ||
-        titleValue === '' ||
-        contentValue === '') {
+    const username = usernameInput.value.trim();
+    const title = titleInput.value.trim();
+    const content = contentInput.value.trim();
+
+    if (!username || !title || !content) {
+        errorAlert.textContent = 'Please do not leave any fields blank';
         return;
-      }
+    }
 
-    usernames.push(usernameValue);
-    titles.push(titleValue);
-    contents.push(contentValue);
+    const post = {
+        username,
+        title,
+        content
+    }
+    const jsonString = localStorage.getItem('posts');
+    const posts = JSON.parse(jsonString) || [];
+    posts.push(post);
 
-    storeBlog();
+    storeBlog(posts);
     clearFields();
-    goToBlog ();
+    goToBlog();
 });
-
-onBoot();
